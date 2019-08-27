@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "IMC-font";
+    src: url('font/imcm_book.ttf');
+}
+
+@font-face {
+    font-family: "Smash-font";
+    src: url('font/super_smash_4_1_by_pokemon_diamond-d7zxu6d.ttf');
+}
+
+body {
+    background-color: black;
+    color: silver;
+}
+
+/* unvisited link */
+a {
+    color: transparent;
+
+}
+a:link {
+    color: transparent;
+}
+
+/* visited link */
+
+a:visited {
+    color: transparent;
+}
+
+/* mouse over link */
+
+a:hover {
+    color: transparent;
+}
+
+/* selected link */
+
+a:active {
+    color: transparent;
+}
+
+header {
+    text-align: center;
+    background-image: radial-gradient(circle, #125e26, #13692a, #14752e, #158031, #168c35);
+    font-family: "Smash-font", sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+    max-height: 500px;
+    font-size: xx-large;
+    color: silver;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+header img {
+    border: ridge;
+    border-width: 5px;
+    padding: 5px;
+    background-color: gold;
+    border-color: gold;
+}
+
+header div p {
+    margin: 0px;
+}
+
+article {
+    font-family: "IMC-font", sans-serif;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article p {
+    max-width: 66vw;
+}
+
+table,th,td {
+    border: 3px solid black;
+    border-collapse: collapse;
+    padding: 0px;
+    
+}
+
+#Article_FB table div{
+    display: flex;
+}
+
+table td {
+    text-align: center;
+    vertical-align: middle;
+}
+table td:not(:first-child){
+    padding:5px;
+}
+.ToSBGColor {
+    background-color: #f2eee3;
+    color: black;
+}
+
+
+.BossDiv {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.BossDiv img {
+    margin: 5px;
+    border: solid;
+    border-width:2px;
+    border-color: black;
+}
+.spanGras {
+    font-weight: bold;
+}
+.centerTxT {
+    text-align: center;
+}

@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "IMC-font";
+    src: url('font/imcm_book.ttf');
+}
+
+
+header {
+    text-align: center;
+    /* background: rgb(0,36,0);
+background: -moz-linear-gradient(top,  rgba(0,36,0,1) 0%, rgba(0,87,0,1) 10%, rgba(0,138,0,1) 22%, rgba(82,177,82,1) 38%, rgba(131,199,131,1) 94%);
+background: -webkit-linear-gradient(top,  rgba(0,36,0,1) 0%,rgba(0,87,0,1) 10%,rgba(0,138,0,1) 22%,rgba(82,177,82,1) 38%,rgba(131,199,131,1) 94%);
+background: linear-gradient(to bottom,  rgba(0,36,0,1) 0%,rgba(0,87,0,1) 10%,rgba(0,138,0,1) 22%,rgba(82,177,82,1) 38%,rgba(131,199,131,1) 94%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002400', endColorstr='#83c783',GradientType=0 ); */
+    padding: 5px;
+}
+
+body {
+    background-image: url("../img/wallhaven-42044.jpg");
+    background-attachment: fixed;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "IMC-font", sans-serif;
+    padding-top: 10px;
+}
+
+section {
+    padding: 5px;
+    width: 75%;
+}
+article {
+    text-align: initial;
+    margin:10px;
+}
+img {
+    /* border: 2px solid black; */
+}
+h1 {
+    background: linear-gradient(to right, rgba(212,195,152,1), rgba(212,195,152,0.5), rgba(255,255,255,0.1));
+    
+}
+h3 {
+    text-decoration: underline;
+}
+
+span {
+    color:yellow;
+}
+.div_intro {
+    display: inline-block;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding:5px;
+    background-color:rgba(233, 227, 213, 0.8);
+}
+#intro {
+    padding:10px;
+    
+}
+
+#event1Img {
+    background: rgb(174,238,217);
+    background: radial-gradient(circle, rgba(174,238,217,1) 0%, rgba(148,233,188,1) 100%); 
+}
+.div_allCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   
+}
+.mainDiv {
+    background-color:rgba(233, 227, 213, 0.8);
+    padding:10px;
+    border-radius: 5px;
+}
+.borderBlack {
+    border: 3px solid black;
+}
+.imgGrp{
+    display: flex;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+/* div {
+    background-color: red;
+} */
