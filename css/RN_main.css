@@ -90,7 +90,12 @@ a>li:hover {
     box-shadow: 2px 5px 9px grey;
 }
 
-
+@media (max-width:800px) {
+    .cardEffect {
+        width : 95%;
+        box-shadow: 2px 5px 9px grey;
+    }
+}
 .div_intro {
     display: inline-block;
     border: 3px solid black;
