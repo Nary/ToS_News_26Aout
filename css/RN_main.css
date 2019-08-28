@@ -2,15 +2,20 @@
     font-family: "IMC-font";
     src: url('font/imcm_book.ttf');
 }
+/* 
+Pour un scroll smooth sans javascript */
+html {
+	scroll-behavior: smooth;
+}
 
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
 
 header {
     text-align: center;
-    /* background: rgb(0,36,0);
-background: -moz-linear-gradient(top,  rgba(0,36,0,1) 0%, rgba(0,87,0,1) 10%, rgba(0,138,0,1) 22%, rgba(82,177,82,1) 38%, rgba(131,199,131,1) 94%);
-background: -webkit-linear-gradient(top,  rgba(0,36,0,1) 0%,rgba(0,87,0,1) 10%,rgba(0,138,0,1) 22%,rgba(82,177,82,1) 38%,rgba(131,199,131,1) 94%);
-background: linear-gradient(to bottom,  rgba(0,36,0,1) 0%,rgba(0,87,0,1) 10%,rgba(0,138,0,1) 22%,rgba(82,177,82,1) 38%,rgba(131,199,131,1) 94%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002400', endColorstr='#83c783',GradientType=0 ); */
     padding: 5px;
 }
 
@@ -23,66 +28,211 @@ body {
     align-items: center;
     font-family: "IMC-font", sans-serif;
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 section {
     padding: 5px;
-    width: 75%;
+    width: 80%;
 }
+
 article {
     text-align: initial;
-    margin:10px;
+    margin: 10px;
 }
+
 img {
     /* border: 2px solid black; */
 }
+
 h1 {
-    background: linear-gradient(to right, rgba(212,195,152,1), rgba(212,195,152,0.5), rgba(255,255,255,0.1));
-    
+    background: linear-gradient(to right, rgba(212, 195, 152, 1), rgba(212, 195, 152, 0.5), rgba(255, 255, 255, 0.1));
 }
+
 h3 {
     text-decoration: underline;
 }
 
 span {
-    color:yellow;
+    color: rgb(161, 140, 20);
 }
+
+a {
+    color: inherit;
+    text-decoration: none;
+    /* no underline */
+}
+
+a:hover {
+    color: inherit;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+}
+p > a {
+    color:blue;
+    text-decoration:underline;
+}
+
+p > a:hover {
+    background-color: none;
+}
+a>li:hover {
+    background-color: aquamarine;
+    color: black;
+}
+
+.cardLink {
+    background-color: aliceblue;
+}
+.cardEffect {
+    width : 25rem;
+    box-shadow: 2px 5px 9px grey;
+}
+
+
 .div_intro {
     display: inline-block;
     border: 3px solid black;
     border-radius: 5px;
-    padding:5px;
-    background-color:rgba(233, 227, 213, 0.8);
+    padding: 5px;
+    background-color: rgba(233, 227, 213, 0.8);
 }
+
 #intro {
-    padding:10px;
-    
+    padding: 10px;
 }
 
 #event1Img {
-    background: rgb(174,238,217);
-    background: radial-gradient(circle, rgba(174,238,217,1) 0%, rgba(148,233,188,1) 100%); 
+    background: rgb(174, 238, 217);
+    background: radial-gradient(circle, rgba(174, 238, 217, 1) 0%, rgba(148, 233, 188, 1) 100%);
 }
+
 .div_allCard {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-   
 }
+
 .mainDiv {
-    background-color:rgba(233, 227, 213, 0.8);
-    padding:10px;
+    background-color: rgba(233, 227, 213, 0.8);
+    padding: 10px;
     border-radius: 5px;
 }
+
 .borderBlack {
     border: 3px solid black;
 }
-.imgGrp{
+
+.imgGrp {
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     margin-top: 3em;
     margin-bottom: 3em;
 }
+
+.imgGrpWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    flex-wrap: wrap;
+}
+
+.imgScreen {
+    width: 450px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 9px grey;
+}
+
+.screen_mini {
+    max-width: 600px;
+}
+
+.divImg_W_desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_in_txt {
+    height: 2em;
+    max-width: 40px;
+}
+
+#topButton {
+    /* display: none; */
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 10px;
+    /* Place the button at the bottom of the page */
+    right: 10px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    /* background-color: red; */
+    /* Set a background color */
+    background-color: green;
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 5px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+}
+@media (max-width:800px) {
+
+}
+
+#topButton:hover {
+    background-color: #555;
+    /* Add a dark-grey background on hover */
+}
+
+@media (max-width:800px) {
+    header {
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+    }
+    section {
+        padding: 5px;
+        width: 95%;
+    }
+    .div_allCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .div_allCard>div {
+        margin: 5px;
+    }
+    .imgGrp {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+}
+
 /* div {
     background-color: red;
 } */

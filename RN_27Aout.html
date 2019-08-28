@@ -12,68 +12,70 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="css/RN_main.css">
+    <script src="https://kit.fontawesome.com/bf16b90ab7.js"></script>
+   
 </head>
 
 <body>
+    <button onclick="topFunction()" id="topButton" title="Go to top"><i class="fas fa-arrow-circle-up"></i></button> 
     <header>
-
-        <img src="img/versionatest2.png">
+        <img src="img/versionatest2.png" alt="image guilde pampa">
     </header>
-    <section id="intro">
+    <div id="intro">
         <div class="div_intro">
             <p>Bonjour et bienvenue sur Rasolo-News ! <br>
-                J'ai fais cette page pour m'amuser. Vous trouverez ici les news pour la maintenance du 27 aout 2019 sur
+                J'ai fait cette page pour m'amuser. Vous trouverez ici les news pour la maintenance du 27 aout 2019 sur
                 iTos <br>
                 Bonne lecture !
             </p>
         </div>
-    </section>
+    </div>
 
     <section id="cards_info">
         <div class="mainDiv">
             <h1>Vue d'ensemble</h1>
             <div class="div_allCard">
-                <div class="card " style="width: 25rem;">
+                <div class="card cardEffect" >
                     <div id="event1Img">
                         <img class="card-img-top" src="img/ToSNews_img1.png" alt="Card image cap">
                     </div>
                     <h5 class="card-title card-header">Change</h5>
                     <div class="card-body">
-
-                        <p class="card-text">Les items Crunchy Choco ont leurs descriptions modifiés !</p>
+                        <p class="card-text">Les items Crunchy Choco ont leurs descriptions modifiées !</p>
                     </div>
-                    <a href="#" class="btn btn-primary">Voir</a>
+                    <a href="#art_change" class="btn btn-primary">Voir</a>
 
                 </div>
-                <div class="card" style="width: 25rem;">
+                <div class="card cardEffect" >
                     <img class="card-img-top" src="img/pig_giltin_event.png" alt="Card image cap">
                     <h5 class="card-title card-header">Events</h5>
                     <div class="card-body">
-                        <p class="card-text">Retour de 2 events</p>
+                        <p class="card-text">Le retour de 2 events passé</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Giltine's Team Clash </li>
-                        <li class="list-group-item">Here Piggy Piggy</li>
+                        <a href="#ev_giltine"><li class="list-group-item cardLink">Giltine's Team Clash </li></a>
+                        <a href="#ev_piggy"><li class="list-group-item cardLink">Here Piggy Piggy</li></a>
                     </ul>
 
-
-                    <a href="#" class="btn btn-primary">Voir</a>
+                    <a href="#art_ev" class="btn btn-primary">Voir</a>
 
                 </div>
-                <div class="card " style="width: 25rem;">
+                <div class="card cardEffect" >
                     <img class="card-img-top" src="img/event3.png" alt="Card image cap">
                     <h5 class="card-title card-header">Prenium</h5>
                     <div class="card-body">
-                        <p class="card-text">2 nouveaux Cubes et un pack pour Token<br> </p>
+                        <p class="card-text">2 nouveaux cubes et un pack Token<br> </p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"> Leticia's Secret Cube</li>
-                        <li class="list-group-item">Snow Globe Cube</li>
-                        <li class="list-group-item">TP Token Pack</li>
+
+                        <a href="#prenium_token"><li class="list-group-item cardLink">TP Token Pack</li></a>
+                        <a href="#prenium_leticia"><li class="list-group-item cardLink"> Leticia's Secret Cube</li></a>
+                        <a href="#prenium_snow"><li class="list-group-item cardLink">Snow Globe Cube</li></a>
+
                     </ul>
 
 
-                    <a href="#" class="btn btn-primary">Voir</a>
+                    <a href="#art_prenium" class="btn btn-primary">Voir</a>
 
                 </div>
             </div>
@@ -81,23 +83,29 @@
     </section>
     <section>
         <div class="mainDiv">
-            <article>
+            <article id="art_change">
                 <h1> 1. Change</h1>
                 <h3> Item tooltips </h3>
                 <div class="imgGrp">
-                    <img src="img/icon_item_cookie_bow.png" title="Crunchy Choco Bow">
-                    <img src="img/icon_item_cookie_cannon.png" title="Crunchy Choco Cannon">
-                    <img src="img/icon_item_cookie_dagger.png" title="Crunchy Choco Dagger">
-                    <img src="img/icon_item_cookie_shield.png" title="Crunchy Choco Shield">
-                    <img src="img/icon_item_cookie_thmace.png" title="Crunchy Choco Two-handed Mace">
-                    <img src="img/icon_item_cookie_thsword.png" title="Crunchy Choco Two-handed Sword">
+                    <img src="img/icon_item_cookie_bow.png" title="Crunchy Choco Bow" alt="image crunchy choco">
+                    <img src="img/icon_item_cookie_cannon.png" title="Crunchy Choco Cannon" alt="image crunchy choco">
+                    <img src="img/icon_item_cookie_dagger.png" title="Crunchy Choco Dagger" alt="image crunchy choco">
+                    <img src="img/icon_item_cookie_shield.png" title="Crunchy Choco Shield" alt="image crunchy choco">
+                    <img src="img/icon_item_cookie_thmace.png" title="Crunchy Choco Two-handed Mace"
+                        alt="image crunchy choco">
+                    <img src="img/icon_item_cookie_thsword.png" title="Crunchy Choco Two-handed Sword"
+                        alt="image crunchy choco">
                 </div>
-                <p>Dorénavant les items <strong>Crunchy Choco</strong> auront dans leurs descriptions le nom de la team et serveur de
+                <p>Dorénavant les items <strong>Crunchy Choco</strong> auront dans leurs descriptions le nom de la team
+                    et serveur de
                     leur designer. <br>
                     En effet ces appearance items faisaient parti d'un concours <strong>Design the Next TOS Weapon
                         contest</strong>. <br>
-                    Les Crunchy Choco étaient contenus dans le <a href="https://treeofsavior.com/page/news/view.php?n=1687">Goddess' Blessed Cube du 23 avril 2019</a>.<br>
-                    Aucun Crunchy Choco étant sur le market en ce moment, impossible de vérifier si ce changement à bien eu lieu.
+                    Les Crunchy Choco étaient contenus dans le <a
+                        href="https://treeofsavior.com/page/news/view.php?n=1687">Goddess' Blessed Cube du 23 avril
+                        2019</a>.<br>
+                    Aucun Crunchy Choco étant sur le market en ce moment, impossible de vérifier si ce changement à bien
+                    eu lieu.
                 </p>
 
             </article>
@@ -105,26 +113,196 @@
     </section>
     <section>
         <div class="mainDiv">
-            <article>
+            <article id="art_ev">
                 <h1> 2. Events</h1>
-                <h3>Giltine's Team Clash </h3>
-                <h4>Périodes</h4>
+                <h2 id="ev_giltine">Giltine's Team Clash: Second Round </h2>
+                <h5>Périodes</h5>
                 <p> L'event démarre du <strong><span>27 aout 2019 au 24 septembre 2019</span></strong></p>
+                <h5>Comment Participer</h5>
+                <ul>
+                    <li>Être au moins level 50</li>
+                    <li>Aller voir le npc <strong>Giltine Apparition</strong> à Klaipeda, près du Residential District
+                        au sud-ouest</li>
+                    <li>Cet event fonctionne comme un donjon, il faut 6 participants pour pouvoir démarrer.</li>
+                    <li>Les joueurs sont divisés en 2 groupes de 3. Les gagnants seront ceux qui arrivent à cumuler le
+                        plus de point.</li>
+                    <li>Des <strong>summoning devices</strong> de couleur rouge et bleu apparaîtrons au centre de la
+                        map. Les utiliser invoque des monstres qui rapportent des points s'ils atteignent le camps
+                        advairse.
+                        Ceux issus d'un device bleu ont plus de pv et rapportent plus de point.</li>
+                    <li>Il est possible de tuer les monstres qui se dirigent vers votre camp, ils ne prennent par
+                        contre qu'un point de dégât par coups.</li>
+                </ul>
+                <div class="imgGrpWrap">
+                    <div class="divImg_W_desc"> <img class="imgScreen img-thumbnail" src="img/ev_giltine.png"
+                            alt="screenshoot giltine">
+                        <p>Le npc Giltine Apparition</p>
+                    </div>
+                    <div class="divImg_W_desc"> <img class="imgScreen img-thumbnail" src="img/ev_giltineM.png"
+                            alt="screenshoot giltine 2">
+                        <p>Position du npc à Klaipeda</p>
+                    </div>
+                    <div class="divImg_W_desc"> <img class="imgScreen img-thumbnail" src="img/ev_giltine_blue.png"
+                            alt="screenshoot giltine 3">
+                        <p>Un summoning device bleu</p>
+                    </div>
+                </div>
+                <h5>Récompenses</h5>
+                <div class="imgGrp">
+                    <img src="img/ev_giltine_reward.png" alt="giltine reward">
+                </div>
+                <p>Une fois qu'une équipe est déclarée vainqueur <strong>les 2 équipes</strong> recoivent une
+                    <img src="img/icon_item_event_giltinebox.png" alt="" class="img_in_txt"> <strong>giltine
+                        box</strong>. Cette récompense ne peut être obtenue qu'une fois par jour et par team. Elle
+                    contient une des
+                    récompenses suivantes :
+                    <ul>
+                        <li><img src="img/icon_item_awakeningstone.png" alt="" class="img_in_txt">Premium Awakening
+                            Stone (14 days) x5</li>
+                        <li><img src="img/item_icon_armor_linksoul1.png" alt="" class="img_in_txt"> [Event]Lv. 400
+                            Unique Enchant Jewel x1</li>
+                        <li> <img src="img/icon_item_dungeon_portalstone.png" alt="" class="img_in_txt">Raid Portal
+                            Stone x3</li>
+                        <li><img src="img/icon_item_gem_elemental1.png" alt="" class="img_in_txt"> Blessed Shard x2</li>
+                        <li><img src="img/icon_item_breakpowder_2.png" alt="" class="img_in_txt">Sierra Powder x10</li>
+                        <li> <img src="img/icon_item_abilitypoint2.png" alt="" class="img_in_txt">Attribute Points: 500
+                            (14 Days) x1</li>
+                    </ul>
+                    Si vous parvenez à avoir un total de 15 victoires vous obtiendrez un <img
+                        src="img/icon_item_armband_guilty.png" alt="" class="img_in_txt"> <strong></strong><strong>
+                        Giltine Follower
+                        Armband x1</strong>
+                </p>
+                <div class="imgGrpWrap">
+                    <div class="divImg_W_desc"> <img class="img-thumbnail" src="img/giltine_brand.gif"
+                            alt="screenshoot giltine brand">
+                        <p>Le Giltine Follower Armband à une animation</p>
+                    </div>
+                </div>
+
+                <h2 id="ev_piggy">Here Piggy Piggy Season 2 </h2>
+                <h5>Périodes</h5>
+                <p> L'event démarre du <strong><span>27 aout 2019 au 24 septembre 2019</span></strong></p>
+                <h5>Comment Participer</h5>
+                <ul>
+                    <li>Être au moins level 50</li>
+                    <li>Aller voir le npc <strong>Golden Pig Search Squad</strong> à Klaipeda, Orsha ou Fedimian.<br>
+                        Pour Orsha et Klaipeda, le npc est proche du event notice board. A Fedimian, près de la statue
+                        de Vakaryne et du torage keeper</li>
+                    <li>Cet event fonctionne comme un donjon avec un groupe de 4, mais il est possible d'entrer seul.
+                    </li>
+                    <li>Les joueurs sont transportés vers une copie de Orsha. Le but est de trouver <strong>au moins 9
+                            cochons</strong> en 4 min</li>
+                    <li>Les cochons ont plus tendance à apparaitre au milieu de la map. Il est possible qu'ils soient
+                        sur les toits</li>
+                </ul>
+                <div class="imgGrpWrap">
+                    <div class="divImg_W_desc"> <img class="imgScreen img-thumbnail" src="img/ev_pig_npc.png"
+                            alt="screenshoot pig">
+                        <p>Le npc Golden Pig Search Squad</p>
+                    </div>
+                    <div class="divImg_W_desc"> <img class="imgScreen img-thumbnail" src="img/ev_pig_npc_Klaipeda.png"
+                            alt="screenshoot pig 2">
+                        <p>Position du npc à Klaipeda</p>
+                    </div>
+                    <div class="divImg_W_desc"> <img class="imgScreen img-thumbnail" src="img/ev_pig_npc_Orsha.png"
+                            alt="screenshoot pig 3">
+                        <p>Position du npc à Orsha</p>
+                    </div>
+                    <div class="divImg_W_desc"> <img class="imgScreen img-thumbnail" src="img/ev_pig_npc_Fedimian.png"
+                            alt="screenshoot pig 3">
+                        <p>Position du npc à Fedimian</p>
+                    </div>
+                    <div class="divImg_W_desc"> <img class="imgScreen img-thumbnail" src="img/ev_pig_toit.png"
+                            alt="screenshoot pig 3">
+                        <p>Les cochons peuvent apparaitre sur les toits</p>
+                    </div>
+                    <div class="divImg_W_desc"> <img class="imgScreen img-thumbnail" src="img/ev_pig_hidden.png"
+                            alt="screenshoot pig 3">
+                        <p>Les décors peuvent cacher les cochons mais pas leur noms</p>
+                    </div>
+                </div>
+
+                <h5>Récompenses</h5>
+                <div class="imgGrp">
+                    <img src="img/newsPigReward.png" alt="giltine reward">
+                </div>
+
+                <p> Une fois par jour et par team, si au moins 9 cochons sont trouvés dans le temps imparti tout le
+                    groupe obtiendra un <img src="img/icon_item_abilitypoint2.png" alt="" class="img_in_txt"> et
+                    un <img src="img/icon_item_happybox_red.png" alt="" class="img_in_txt"> contenant l'une des
+                    récompenses suivantes :
+                    <ul>
+                        <li> <img src="img/icon_item_anvil_gold.png" alt="" class="img_in_txt"> Golden Anvil (14 Days)
+                            x1</li>
+                        <li> <img src="img/icon_item_indunonemoreenter.png" alt="" class="img_in_txt"> Instanced Dungeon
+                            One Entry Voucher (14 Days) x1</li>
+                        <li> <img src="img/icon_item_chall_entry.png" alt="" class="img_in_txt"> Challenge Mode One
+                            Entry Voucher (14 Days) x1</li>
+                        <li> <img src="img/icon_item_challengemode_scroll.png" alt="" class="img_in_txt"> Challenge
+                            Portal Scroll (14 Days) x1</li>
+                    </ul>
+                    De plus la personne avec ayant trouvé le plus de cochon aura un <img
+                        src="img/icon_item_abilitypoint.png" alt="" class="img_in_txt">  Attribute Points: 1,000 (14 Days) x1. <br>
+                    Le nombre de réussite de l'évent apporte aussi des récompenses :
+                    <ul>
+                        <li> 5 réussites : <img src="img/icon_item_enchantscroll.png" alt="" class="img_in_txt"> Enchant
+                            Scroll (14 Days) x5</li>
+                        <li> 10 réussites : <img src="img/icon_item_rankreset_paper_1.png" alt="" class="img_in_txt">
+                            Class Change Voucher Lv 1 (14 Days) x1</li>
+                        <li> 15 réussites : <img src="img/icon_item_abillityreset.png" alt="" class="img_in_txt">
+                            Attribute Reset Potion (14 Days) x1</li>
+                    </ul>
+                </p>
             </article>
         </div>
-          
-            <article>Prenium</article>
-       
+    </section>
+    <section>
+        <div class="mainDiv">
+            <article id="art_prenium">
+                <h1>Prenium</h1>
+                <h2 id="prenium_token">TP Token Pack</h2>
+                <div class="imgGrp">
+                    <img src="img/token_bag.jpg" title="token banner" alt="token banner">
+                </div>
+                <h2></h2>
+                <p>Du <strong><span>27 aout 2019 au 17 septembre 2019</span></strong> vous trouverez au TP shop le <img
+                        src="img/icon_item_token_box_5.png" alt="" class="img_in_txt">Double Happy Bag contenant
+                    2 <img src="img/icon_item_token.png" alt="" class="img_in_txt"> tokens pour <strong>149 tp</strong>.</p>
+
+                <h2>Leticia's Secret Cube</h2>
+                <p>Du <strong><span>27 aout 2019 au 10 septembre 2019</span></strong> vous trouverez au TP shop le <img
+                        src="img/icon_item_randombox.png" alt="" class="img_in_txt">Leticia's Secret Cube pour
+                    2 tokens pour <strong>10 tp</strong> (un item) ou <strong>100 tp</strong> pour 11 items.<br>
+                    Les items dans ce cube sont les suivants :
+                </p>
+                <div class="imgGrp">
+                    <img src="img/leiticia_cube.jpg" alt="leiticia_cube">
+                </div>
+
+                <h2 id="prenium_snow">Snow Globe Cube</h2>
+                <p>Du <strong><span>27 aout 2019 au 17 septembre 2019</span></strong> vous trouverez au TP shop le <img
+                        src="img/icon_item_hairgacha.png" alt="" class="img_in_txt">Snow Globe Cube pour
+                    2 tokens pour <strong>10 tp</strong> (1 item) ou <strong>100 tp</strong>(11 items).<br>
+                    Les items dans ce cube sont les suivants :
+                </p>
+                <div class="imgGrp">
+                    <img src="img/snowCube.jpg" alt="snow cube">
+                </div>
+            </article>
+        </div>
     </section>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/RN_main.js"></script>
 </body>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+
 
 </html>
